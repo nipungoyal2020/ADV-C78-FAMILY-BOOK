@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+<title>
+
+MY FAMILY ANIMAL
+
+</title>
+
+</head>
+
+<body>
+
+<h1>MY FAMILY BOOK</h1>
+
+<h3 class="who"></h3>
+
+<img id="fam" src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" width="500" heght="500">
+
+<div id="display_name" style="font-weight: bold;"></div>
+
+<button id="next" onclick="NEXT()">NEXT</button>
+
+<script>
+
+var image=[
+    "https://img1.pnghut.com/22/6/15/u60rvNupvT/cartoon-action-figure-boss-baby-tshirt-animation.jpg",
+  "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png",
+  "https://st.depositphotos.com/1077687/1903/v/950/depositphotos_19036597-stock-illustration-cartoon-boy.jpg",
+  "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-stock-vector-little-girl-avatar-character-vector-illustration-design.jpg?ver=6"
+]
+
+var n=[
+"NITIN GOYAL",
+"NEHA GUPTA",
+"MOULIK GOYAL",
+"KRISHLA GOYAL"
+]
+
+var i = 0; 
+
+var w = 0;
+
+function NEXT(){
+
+  if(i == 4)
+{
+  i= 0;
+}
+
+if(w == 4)
+{
+  w= 0;
+}
+
+   document.getElementById("fam").src = image[i];
+
+   document.getElementById("display_name").src = n[w];
+
+  i++;
+
+  w++;
+
+}
+
+</script>
+
+</body>
+
+</html>
